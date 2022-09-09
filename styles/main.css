@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Readex+Pro&display=swap');
+
+:root {
+ --mainTextColor: #000;
+ --secondaryTextColor: rgb(51,51,51)
+ --mainBackgroundColor: rgb(249, 250, 251);
+ --mainLinkColor: #22409b;
+
+}
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Readex Pro', 'Courier New', Courier, monospace;
+ line-height: 1.5em;
+}
+
+body {
+ background-color: var(--mainBackgroundColor);
+ color: var(--mainTextColor);
+}
+
+p, span, li {
+  color: var(--secondaryTextColor);
+  font-size: 1rem;
+}
+
+li{
+  line-height: 1.9em;
+}
+
+a {
+  /* color: var(--mainLinkColor); */
+  text-decoration: none;
+}
+
+li {
+line-height: 2rem;
+}
+
+section {
+ margin-bottom: 3.5rem;
+}
+section h1 {
+  margin-bottom: 1.7rem ;
+  
+}
+
+#container-main {
+ max-width: 800px;
+ margin: 0 auto;
+ margin-top: 100px;
+}
+
+#container-projects {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 30px  
+}
+
+.container-header {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 4rem;
+ margin-bottom: 30px;
+}
+
+.header--left img {
+ width: 170px;
+ height: 170px;
+ object-fit: cover;
+ border-radius: 50%;
+}
+
+.header--right  > p {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.header--right h1 {
+ font-size: 3rem;
+ margin-bottom: 30px;
+}
+
+
+.socials--menus {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+}
+
+.socials--menus a {
+  font-size: 0.85rem;
+  color: rgb(65, 63, 63);
+  transition: 0.3s;
+}
+.socials--menus a:hover {
+ color: var(--mainLinkColor);
+ text-decoration: underline;
+ font-size: 0.88rem;
+}
+
+
+
+#section--skills h1 {
+  margin-bottom: 1rem;
+}
+
+.skill--list {
+ padding: 15px 40px;
+ list-style: none;
+}
+
+.techStack--list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+
+.techStack {
+  border: 0.3px solid rgb(237, 235, 235);
+  padding: 10px;
+  font-size: 0.85rem;
+  color:rgb(94, 90, 90);
+}
+
+.line-break {
+  border-bottom: 1px solid rgb(228, 222, 222);
+}
+
+.workHistory--list {
+  border-left: 1px solid rgb(215, 212, 212);
+  padding-left: 2rem;
+  margin: 2rem 0;
+}
+
+.workHistory--list p {
+margin: 1rem 0;
+}
+
+.workHistory--list ul li{
+  margin-left: 2rem;
+}
+
+
+.project {
+  min-width: 700px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgb(220, 213, 213);
+  padding: 0.5rem 0;
+  /* border: 2px solid rebeccapurple; */
+}
+
+.project:last-child {
+ border-bottom: 1px solid rgb(220, 213, 213);
+}
+
+.project a {
+  font-size: 13px;
+  line-height: 2rem;
+  color: #22409b;
+}
+
+.project a span{
+  font-size: 1rem;
+  color: var(--mainTextColor);
+  transition: 0.3s;
+}
+.project a span:hover {
+  color: var(--mainLinkColor);
+  text-decoration: underline;
+}
+
+.publication {
+  border-top: 1px solid rgb(220, 213, 213) ;
+  padding: 10px 0;
+}
+
+.publication a {
+  font-size: 15px;
+  line-height: 1rem;
+  color: #22409b;
+}
+
+.publication a:hover {
+  text-decoration: underline;
+}
+
+#container-projects h1 {
+margin: 30px 0 20px;
+color: rgb(67, 62, 62);
+}
+
+.back-page {
+  margin: 30px 0;
+}
+
+.container-projects ul {
+  padding-left: 40px;
+  color: #22409b;
+  margin: 20px 0 20px;
+}
+
+.container-projects ul li {
+  color: #000;
+}
+
+.container-projects ul a li{
+  color: #22409b;
+  font-size: 16px;
+}
+
+
+.container-projects ul a li:hover{
+  text-decoration: underline;
+}
+
+
+
+/* Media Query */
+
+@media (max-width: 600px) {
+  
+  #container-main {
+    margin-top:70px;
+  }
+  .container-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .container-header h1{
+    text-align: center;
+    margin-top: 0;
+    margin-top: 10px;
+    font-size: 30px;
+  }
+  .header--left{
+    margin-bottom: 0px;
+  }
+  .header--right{
+    text-align: center;
+    margin: 0 10px;
+    margin-top: 5px;    
+  }
+
+ h1{
+    margin-left: 20px;
+  }
+  .techStack--list {
+    margin-left: 20px;
+  }
+
+  .project, .publication {
+    margin: 0 20px;
+  }
+
+}
+
+.app-review{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.app-review strong {
+  padding-bottom: 5px;
+}
