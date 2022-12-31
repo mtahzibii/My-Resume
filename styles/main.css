@@ -401,4 +401,16 @@ color: rgb(67, 62, 62);
         padding: 5px 0;
       }
 
-  
+  .libraries {
+    margin-bottom: 5rem;
+    list-style-type: '- ';    
+  }
+
+  ul.libraries {
+    margin-bottom: 3rem;
+  }
+
+  .project-description {
+    margin-bottom: 2rem;
+    text-align: justify;
+  }

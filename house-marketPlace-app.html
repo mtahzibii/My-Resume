@@ -13,6 +13,21 @@
   <title>M.Tahzibi | Digital Resume</title>
  </head>
  <body>
+  <!-- Header -->
+  <header id="header-home">
+   <div class="container">
+    <nav id="main-nav">
+     <a href="/"><p>M.Tazhibi</p></a>
+     <ul class="mine">
+      <li><a href="#section--bio" class="current">About</a></li>
+      <li><a href="#section--workHistory">Experience</a></li>
+      <li><a href="#section--projects">Portfolio</a></li>
+      <li><a href="#section--publications">Publications</a></li>
+     </ul>
+    </nav>
+   </div>
+  </header>
+
   <div id="container-projects" class="container-projects">
    <div class="back-page">
     <a href="/index.html"><i class="fa fa-arrow-left"></i>&nbsp Go Back</a>
@@ -33,25 +48,24 @@
     <strong style="border-bottom: 1px solid rgba(0, 0, 0, 0.4)">App Review</strong>
    </div>
 
-   <p style="text-align: justify">
+   <p class="project-description">
     This is an house marketplace application where users can sell or rent their
     house. After logged in, the user can view the list of houses registered for sale
     or rent. Also, if you wish, you can sell or rent a specific apartment. At the
     time of registration, it specifies the main specifications, including the toilet,
     bathroom, rooms, parking,fuenished, sale or rent, as well as the exact location
-    of the apartment.
+    of the apartment.<br />
 
-    <br />
     The backend of this application is powerved by
     <a href="https://firebase.google.com/">Firebase</a> which is a platform developed
     by Google for creating mobile and web applicationsis. All is required in backend
     (including Database, Data Store, Authentication and ...) are being easily
     provided by this platform. <br /><br />
-
-    The main libraries used in the project are given below:
    </p>
 
-   <ul style="margin-bottom: 50px">
+   <strong>Main libraries used in the project:</strong>
+
+   <ul class="libraries">
     <li>
      <a href="https://react-leaflet.js.org/">React Leaflet </a>(React components for
      Leaflet maps )
