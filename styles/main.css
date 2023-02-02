@@ -387,6 +387,10 @@ color: rgb(67, 62, 62);
       ul {
         list-style: none; 
       }
+
+      .work-history li {
+        list-style:disc;
+      }
       
 
       #header-home p {
